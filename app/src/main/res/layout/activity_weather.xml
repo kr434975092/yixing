@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="390dp"
+                android:background="@drawable/back"
+                >
+                <TextView
+                    android:id="@+id/wtemp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text="-7°"
+                    android:textSize="75dp"
+                    android:textColor="#ffffff"
+                    />
+
+
+                <TextView
+                    android:id="@+id/wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cop"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_toEndOf="@+id/wtemp"
+                    android:text="2级 东风"
+                    android:textColor="#ffffff"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@+id/wtemp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/wind"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_toLeftOf="@+id/aqi"
+                    android:layout_toStartOf="@+id/aqi"
+                    android:src="@drawable/leaf" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/wind"
+                    android:layout_toStartOf="@+id/wind"
+                    android:src="@drawable/wind"
+                    android:layout_toLeftOf="@+id/wind" />
+
+
+                <TextView
+                    android:id="@+id/aqi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView2"
+                    android:layout_toStartOf="@+id/cop"
+                    android:text="64良好"
+                    android:textColor="#ffffff"
+                    android:layout_toLeftOf="@+id/cop" />
+
+                <TextView
+                    android:id="@+id/cop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wtemp"
+                    android:layout_centerHorizontal="true"
+                    android:text="29°/11°多云"
+                    android:textColor="#ffffff"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scrollbars="none"
+                    android:layout_alignParentLeft="true">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:id="@+id/weekw"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:text="今天"
+                                android:gravity="center"
+                                />
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/todayc"
+                                android:text="多云"
+                                android:gravity="center"
+                                android:textColor="#999"
+                                />
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:id="@+id/timg"
+                                android:src="@drawable/tianqi"
+                                />
+                            <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="30dp"
+                                android:id="@+id/todayt"
+                                android:text="29°/11°"
+                                android:gravity="center"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:gravity="center"
+                                android:text="良好"
+                                android:id="@+id/todaycp"
+                                android:textColor="#f39a00" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:background="#dbdbdb"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/border3"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/air"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="空调指数"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/huazh"
+                    android:text="去油"
+                    android:textColor="#f39a00"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/border3"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/yifu"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="穿衣指数"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/cloth"
+                    android:text="去油"
+                    android:textColor="#f39a00"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/border3"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/yaoxiang"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="感冒"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/flu"
+                    android:text="去油"
+                    android:textColor="#f39a00"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/border3"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/yundong"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="运动"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/spo"
+                    android:text="去油"
+                    android:textColor="#f39a00"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/border3"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/xin"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="心情指数"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/feel"
+                    android:text="去油"
+                    android:textColor="#f39a00"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/border3"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/lvxing"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="旅行"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/trip"
+                    android:text="去油"
+                    android:textColor="#f39a00"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/border3"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/xiche"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="洗车"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/wcar"
+                    android:text="去油"
+                    android:textColor="#f39a00"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/border3"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/taiyang"
+                    />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="紫外线"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/bc"
+                    android:text="去油"
+                    android:textColor="#f39a00"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:background="#7bdeba"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="11dp"
+
+                    android:gravity="center"
+                    android:left="159dp"
+                    android:text="体温"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="23dp"
+                    android:top="70dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/remain0"
+                    android:layout_width="220dp"
+                    android:layout_height="220dp"
+                    android:background="@drawable/border1">
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/border1" />
+
+                    <TextView
+                        android:id="@+id/trate1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="36.2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="50dp"
+                        android:top="170dp" />
+
+                    <TextView
+                        android:layout_width="22dp"
+                        android:layout_height="29dp"
+                        android:layout_alignBottom="@+id/trate1"
+                        android:layout_marginBottom="22dp"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginStart="19dp"
+                        android:layout_toEndOf="@+id/tratec"
+                        android:layout_toRightOf="@+id/tratec"
+                        android:gravity="center"
+                        android:text="°C"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tratec"
+                        android:layout_width="57dp"
+                        android:layout_height="23dp"
+                        android:layout_below="@+id/trate1"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:text="体温正常"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/report"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="#7bdeba"
+                    android:textColor="@color/white"
+                    android:text="生成健康报告" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/remain1"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="5dp"
+                        app:srcCompat="@drawable/heart" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="31dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:left="60dp"
+                        android:text="心率"
+                        android:textColor="#101010"
+                        android:textSize="15dp"
+                        android:top="428dp" />
+
+                    <TextView
+                        android:id="@+id/sdate1"
+                        android:layout_width="100dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginStart="52dp"
+                        android:gravity="center"
+                        android:text="4月17日 19:59"
+                        android:textColor="#666566"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/hi1"
+                        android:layout_width="40dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView"
+                        android:layout_marginEnd="43dp"
+                        android:layout_marginRight="43dp"
+                        android:gravity="center"
+                        android:text="92"
+                        android:textColor="#101010"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="35dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="次/分"
+                        android:textColor="#101010"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/remain2"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/bp" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="31dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:left="60dp"
+                        android:text="血压"
+                        android:textColor="#101010"
+                        android:textSize="15dp"
+                        android:top="428dp" />
+
+                    <TextView
+                        android:id="@+id/sdate2"
+                        android:layout_width="100dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginStart="52dp"
+                        android:gravity="center"
+                        android:text="4月17日 19:59"
+                        android:textColor="#666566"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/bp"
+                        android:layout_width="81dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView1"
+                        android:layout_marginEnd="43dp"
+                        android:layout_marginRight="43dp"
+                        android:gravity="center"
+                        android:text="120/75"
+                        android:textColor="#101010"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView1"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="mmHg"
+                        android:textColor="#101010"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/remain3"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/tcg" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="31dp"
+                        android:layout_height="29dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="center"
+                        android:left="60dp"
+                        android:text="血脂"
+                        android:textColor="#101010"
+                        android:textSize="15dp"
+                        android:top="428dp" />
+
+                    <TextView
+                        android:id="@+id/sdate3"
+                        android:layout_width="100dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginStart="52dp"
+                        android:gravity="center"
+                        android:text="4月17日 19:59"
+                        android:textColor="#666566"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tcg"
+                        android:layout_width="81dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/textView2"
+                        android:layout_marginEnd="43dp"
+                        android:layout_marginRight="43dp"
+                        android:gravity="center"
+                        android:text="92/60"
+                        android:textColor="#101010"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView2"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="mmol/L"
+                        android:textColor="#101010"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_health"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_health"
+            android:text="健康"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_gps"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_gps"
+            android:text="导航" />
+
+        <RadioButton
+            android:id="@+id/rb_find"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_find"
+            android:text="发现" />
+
+
+    </RadioGroup>
+</RelativeLayout>

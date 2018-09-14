@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <com.jude.rollviewpager.RollPagerView
+                android:id="@+id/roll_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                app:rollviewpager_play_delay="3000" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:id="@+id/find1">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_above="@+id/textView"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:src="@drawable/cloud" />
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="本地天气"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:id="@+id/find2">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_above="@+id/textView1"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:src="@drawable/car" />
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="我的汽车"
+                        android:textSize="15dp"
+                        android:id="@+id/textView1" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:id="@+id/find3">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_above="@+id/textView2"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:src="@drawable/wheel" />
+
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="我的驾照"
+                        android:textSize="15dp"
+                        android:id="@+id/textView2" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#F0F0F2" />
+           <ListView
+               android:id="@+id/newslist"
+               android:layout_width="fill_parent"
+               android:layout_height="130dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#F0F0F2" />
+        </LinearLayout>
+    </ScrollView>
+    <RadioGroup
+                android:id="@+id/rg_tab_bar3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                >
+                <RadioButton
+                    android:id="@+id/rb_health3"
+                    style="@style/tab_menu_item"
+                    android:drawableTop="@drawable/tab_menu_health"
+                    android:text="健康"
+                    android:layout_alignParentBottom="true"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_gps3"
+                    style="@style/tab_menu_item"
+                    android:drawableTop="@drawable/tab_menu_gps"
+                    android:text="导航"
+                    android:layout_alignParentBottom="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/rb_find3"
+                    style="@style/tab_menu_item"
+                    android:drawableTop="@drawable/tab_menu_find"
+                    android:text="发现" />
+
+
+
+            </RadioGroup>
+</RelativeLayout>

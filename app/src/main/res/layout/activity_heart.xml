@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        >
+    <View
+        android:id="@+id/viewh"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="#E35E4F"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border1">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/hi"
+                android:layout_width="110dp"
+                android:layout_height="116dp"
+                android:layout_alignLeft="@+id/view2"
+                android:layout_alignStart="@+id/view2"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="41dp"
+                android:layout_marginStart="41dp"
+                android:gravity="center"
+                android:text="69"
+                android:textColor="#FFFFFF"
+                android:textSize="90dp"
+                android:top="170dp" />
+
+            <TextView
+                android:layout_width="22dp"
+                android:layout_height="29dp"
+                android:layout_alignBottom="@+id/hi"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/hic"
+                android:layout_toRightOf="@+id/hic"
+                android:gravity="center"
+                android:text="次/分"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/hic"
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/view2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="心率正常"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+        <!--折线图-->
+
+        <View
+            android:left="1dp"
+            android:top="632dp"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+
+            android:background="#F5F2F5"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:left="10dp"
+            android:top="660dp"
+            android:layout_width="57dp"
+            android:layout_height="23dp"
+
+            android:textColor="#101010"
+            android:textSize="14dp"
+            android:gravity="center"
+
+            android:text="安静心率"
+            />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+
+            android:textColor="#101010"
+            android:textSize="11dp"
+            android:text="正常人安静状态下每分钟心跳的次数，一般为60~100次/分。"
+            />
+        <View
+            android:left="3dp"
+            android:top="683dp"
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"
+            android:background="#F5F2F5"/>
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#101010"
+            android:text="基于心率的健康状况、历史趋势分析"
+            android:textSize="20dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:text="1.按最近一月分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="1.1 按时段分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hiv1"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="分析结果"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/hisound1"
+            android:src="@drawable/voice" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hic1"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:text="状况分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="1.2 按天分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hiv2"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="分析结果"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/hisound2"
+                android:src="@drawable/voice" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hic2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="状况分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:text="2.按最近一周分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="2.1 按时段分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hiv3"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="分析结果"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/hisound3"
+                android:src="@drawable/voice" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hic3"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:text="状况分析"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="2.2 按天分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hiv4"
+                    android:gravity="center"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="分析结果"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/hisound4"
+                android:src="@drawable/voice" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hic4"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="状况分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="23dp"
+            android:text="基于心率的异常分析"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#101010"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="最近一周异常情况列表"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/hiin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hic5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="呵呵"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        >
+
+        <View
+            android:id="@+id/viewtmp"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#7bdeba"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+
+            <RelativeLayout
+                android:id="@+id/photoW"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="40dp"
+                android:background="#7bdeba"
+                android:gravity="center"
+                >
+                <HorizontalScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    >
+                    <LinearLayout
+                        android:id="@+id/lineartmp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        ></LinearLayout>
+                </HorizontalScrollView>
+                <!--折线图-->
+                <TextView
+                    android:id="@+id/todaytmp"
+                    android:layout_width="29dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_toLeftOf="@+id/weektmp"
+                    android:layout_toStartOf="@+id/weektmp"
+
+                    android:gravity="center"
+                    android:text="今天"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/weektmp"
+                    android:layout_width="43dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentBottom="true"
+
+                    android:layout_centerHorizontal="true"
+
+                    android:gravity="center"
+                    android:text="近一周"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/monthtmp"
+                    android:layout_width="43dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginStart="11dp"
+                    android:layout_toEndOf="@+id/weektmp"
+                    android:layout_toRightOf="@+id/weektmp"
+                    android:gravity="center"
+                    android:text="近一月"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="基于体温的健康状况、历史趋势分析"
+                android:textColor="#101010"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="1.按最近一月分析"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="1.1 按时段分析"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tmpv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:text="分析结果" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/tmpsound1"
+                    android:src="@drawable/voice" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ctmp1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:text="状况分析" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="1.2 按天分析" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tmpv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:text="分析结果" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/tmpsound2"
+                    android:src="@drawable/voice" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/ctmp2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="状况分析" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="2.按最近一周分析"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="2.1 按时段分析"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tmpv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:text="分析结果" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/tmpsound3"
+                    android:src="@drawable/voice" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ctmp3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:text="状况分析" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="2.2 按天分析" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tmpv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"></LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:text="分析结果" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/tmpsound4"
+                    android:src="@drawable/voice" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/ctmp4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="状况分析" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="基于体温的异常分析"
+                android:textColor="#101010"
+                android:textSize="23dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="最近一周异常情况列表" />
+
+            <LinearLayout
+                android:id="@+id/norc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"></LinearLayout>
+
+            <TextView
+                android:id="@+id/ctmp5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="呵呵" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

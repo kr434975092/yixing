@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7adfb8">
+
+ <include
+        android:id="@+id/main_title"
+        layout="@layout/title_layout2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_title"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="55dip"
+            android:layout_height="55dip"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="Easy To Go"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SHOW YOUR MIEN"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout">
+
+        <include
+            android:id="@+id/input_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="220dip"
+            layout="@layout/input_layout1" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/main_btn_register2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_bg"
+        android:gravity="center"
+        android:paddingBottom="2dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="2dip"
+        android:text="注  册"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

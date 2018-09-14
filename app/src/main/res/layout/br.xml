@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:background="@drawable/rules_border">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2018-06-17 12:06:00"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/time"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="太行山脉高速公路201号"
+            android:textSize="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/place"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="机动车违反禁止停车规定"
+            android:textSize="17dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/accdient"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f2f2f2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扣分"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3分"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#f38745"
+                android:textStyle="bold"
+                android:id="@+id/mark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罚款"
+                android:textSize="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100元"
+                android:textSize="17dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#f38745"
+                android:textStyle="bold"
+                android:id="@+id/money"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

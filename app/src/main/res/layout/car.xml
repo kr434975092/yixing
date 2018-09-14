@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/car2"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView5"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:text="车内温度"
+        android:textColor="#fafafa"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="154dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="25°C"
+        android:textColor="#fafafa"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:text="车速"
+        android:textColor="#fafafa"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView7"
+        android:text="30km/h"
+        android:textColor="#fafafa"
+        android:textSize="30dp" />
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

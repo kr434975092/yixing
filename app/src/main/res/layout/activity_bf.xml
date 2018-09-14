@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        >
+    <View
+        android:id="@+id/viewbf"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="#8186C5"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/photoW"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_marginTop="40dp"
+            android:background="#8186C5"
+            android:gravity="center"
+            >
+
+            <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+
+                >
+             <LinearLayout
+                 android:id="@+id/linearbf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                ></LinearLayout>
+            </HorizontalScrollView>
+
+            <!--折线图-->
+            <TextView
+                android:id="@+id/todaybf"
+                android:layout_width="29dp"
+                android:layout_height="23dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:layout_toLeftOf="@+id/weekbf"
+                android:layout_toStartOf="@+id/weekbf"
+
+                android:gravity="center"
+                android:text="今天"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/weekbf"
+                android:layout_width="43dp"
+                android:layout_height="23dp"
+                android:layout_alignParentBottom="true"
+
+                android:layout_centerHorizontal="true"
+
+                android:gravity="center"
+                android:text="近一周"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/monthbf"
+                android:layout_width="43dp"
+                android:layout_height="23dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/weekbf"
+                android:layout_toRightOf="@+id/weekbf"
+
+                android:gravity="center"
+
+                android:text="近一月"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tips"
+            android:layout_marginTop="13dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photoW1"
+            android:gravity="center_horizontal"
+            android:text="上面的折线图中,蓝色折线代表总胆固醇,红色折现代表甘油三酯"
+            android:textSize="13dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:background="@drawable/border2"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="61dp"
+                android:layout_height="29dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+
+                android:text="总胆固醇"
+                android:textColor="#101010"
+                android:textSize="15dp"
+                android:id="@+id/bf5" />
+
+            <TextView
+                android:id="@+id/tc"
+                android:layout_width="50dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/bf5"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="1.41"
+                android:textColor="#101010"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="46dp"
+                android:layout_height="23dp"
+                android:layout_alignBottom="@+id/tc"
+                android:layout_toEndOf="@+id/tc"
+                android:layout_toRightOf="@+id/tc"
+
+                android:gravity="center"
+                android:left="107dp"
+
+                android:text="mmol/L"
+                android:textColor="#3D3C3D"
+                android:textSize="13dp"
+                android:top="446dp" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:background="@drawable/border2"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="61dp"
+                android:layout_height="29dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:gravity="center"
+
+                android:text="甘油三酯"
+                android:textColor="#101010"
+                android:textSize="15dp"
+                android:id="@+id/bf7"
+                />
+
+            <TextView
+                android:id="@+id/tg"
+                android:layout_width="50dp"
+                android:layout_height="44dp"
+                android:layout_below="@+id/bf7"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="1.41"
+                android:textColor="#101010"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="46dp"
+                android:layout_height="23dp"
+                android:layout_alignBottom="@+id/tg"
+                android:layout_toEndOf="@+id/tg"
+                android:layout_toRightOf="@+id/tg"
+
+                android:gravity="center"
+                android:left="107dp"
+                android:text="mmol/L"
+                android:textColor="#3D3C3D"
+                android:textSize="13dp"
+                android:top="446dp" />
+        </RelativeLayout>
+    </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="基于总胆固醇的健康状况、历史趋势分析"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#101010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:text="1.按最近一月分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="1.1 按时段分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tcv1"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="分析结果"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/tcsound1"
+                android:src="@drawable/voice" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tcc1"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="状况分析"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="1.2 按天分析"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tcv2"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="分析结果"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/tcsound2"
+                android:src="@drawable/voice" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tcc2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="状况分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:text="2.按最近一周分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="2.1 按时段分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tcv3"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="分析结果"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/tcsound3"
+            android:src="@drawable/voice" />
+    </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tcc3"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="状况分析"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="2.2 按天分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tcv4"
+                    android:gravity="center"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:text="分析结果"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/tcsound4"
+                android:src="@drawable/voice" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tcc4"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="状况分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#101010"
+            android:textSize="23dp"
+            android:text="基于总胆固醇的异常分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="最近一周异常情况列表"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tcin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tcc5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="呵呵"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="基于甘油三酯的健康状况、历史趋势分析"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#101010"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:text="1.按最近一月分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="1.1 按时段分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgv1"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="分析结果"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/tgsound1"
+                android:src="@drawable/voice" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tgc1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="状况分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="1.2 按天分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgv2"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="分析结果"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/tgsound2"
+            android:src="@drawable/voice" />
+    </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tgc2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="状况分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:text="2.按最近一周分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp"
+            android:text="2.1 按时段分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgv3"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="分析结果"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/tgsound3"
+                android:src="@drawable/voice" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tgc3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="状况分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="2.2 按天分析"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tgv4"
+                    android:gravity="center"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="分析结果"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/tgsound4"
+            android:src="@drawable/voice" />
+    </LinearLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tgc4"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="状况分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#101010"
+            android:textSize="23dp"
+            android:text="基于甘油三酯的异常分析"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="最近一周异常情况列表"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/tgin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tgc5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="呵呵"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
